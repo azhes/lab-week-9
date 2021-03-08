@@ -1,3 +1,33 @@
-@media (min-width: 360px) {
-    div {background-color: #ebbcba
+* {
+    box-sizing: border-box
+}
+
+body {
+    width: 90%;
+    margin: 2em auto;
+}
+
+div {
+    margin-bottom: 1em;
+}
+
+@media (min-width: 360px) and (max-width: 767px) {  /*Galaxy S9/S9+ Screen Size*/
+    div {
+        background-color: #ebbcba;
+        font-size: 1.2rem;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 20px}
+}
+
+@media (min-width: 768px) {     /*iPad Screen Size*/
+    div {
+        background-color: #f6c177;
+        font-size: 1.5rem}
+}
+
+@media (min-width: 1440px) {    /*Laptop with HiDPI Screen Size*/
+    div {
+        background-color: #eb6f92;
+        font-size: 1.8rem}
 }
